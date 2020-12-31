@@ -3,20 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C777624259DBE7E00821D8E /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 9C777623259DBE7E00821D8E /* GRDB */; };
+		9C777629259DBEA200821D8E /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C777628259DBEA200821D8E /* AppDatabase.swift */; };
+		9C77762C259DBEC000821D8E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77762B259DBEC000821D8E /* Persistence.swift */; };
+		9C777630259DC5F000821D8E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77762F259DC5F000821D8E /* Task.swift */; };
+		9C777636259DC85200821D8E /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C777635259DC85200821D8E /* TaskListViewModel.swift */; };
+		9C77763A259DC97000821D8E /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C777639259DC97000821D8E /* TaskRepository.swift */; };
+		9C777640259DD11400821D8E /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77763F259DD11400821D8E /* AddTaskView.swift */; };
+		9C777643259DD12600821D8E /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C777642259DD12600821D8E /* AddTaskViewModel.swift */; };
+		9C777648259DF80200821D8E /* EditTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C777647259DF80200821D8E /* EditTaskView.swift */; };
+		9C77764C259DF81900821D8E /* EditTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C77764B259DF81900821D8E /* EditTaskViewModel.swift */; };
 		9CD69837259C35E300651338 /* ToyGRDBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69836259C35E300651338 /* ToyGRDBApp.swift */; };
-		9CD69839259C35E300651338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69838259C35E300651338 /* ContentView.swift */; };
+		9CD69839259C35E300651338 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD69838259C35E300651338 /* TaskListView.swift */; };
 		9CD6983B259C35E500651338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6983A259C35E500651338 /* Assets.xcassets */; };
 		9CD6983E259C35E500651338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD6983D259C35E500651338 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C777628259DBEA200821D8E /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
+		9C77762B259DBEC000821D8E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9C77762F259DC5F000821D8E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9C777635259DC85200821D8E /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		9C777639259DC97000821D8E /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		9C77763F259DD11400821D8E /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		9C777642259DD12600821D8E /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		9C777647259DF80200821D8E /* EditTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskView.swift; sourceTree = "<group>"; };
+		9C77764B259DF81900821D8E /* EditTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewModel.swift; sourceTree = "<group>"; };
 		9CD69833259C35E300651338 /* ToyGRDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyGRDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD69836259C35E300651338 /* ToyGRDBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyGRDBApp.swift; sourceTree = "<group>"; };
-		9CD69838259C35E300651338 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9CD69838259C35E300651338 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		9CD6983A259C35E500651338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CD6983D259C35E500651338 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9CD6983F259C35E500651338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,12 +46,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C777624259DBE7E00821D8E /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C777626259DBE9100821D8E /* Persistencies */ = {
+			isa = PBXGroup;
+			children = (
+				9C777638259DC96200821D8E /* Repositories */,
+				9C777628259DBEA200821D8E /* AppDatabase.swift */,
+				9C77762B259DBEC000821D8E /* Persistence.swift */,
+			);
+			path = Persistencies;
+			sourceTree = "<group>";
+		};
+		9C77762E259DC5E300821D8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C77762F259DC5F000821D8E /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C777632259DC81600821D8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9C777646259DF7EE00821D8E /* EditTask */,
+				9C77763E259DD10200821D8E /* AddTask */,
+				9C777634259DC83B00821D8E /* TaskList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9C777634259DC83B00821D8E /* TaskList */ = {
+			isa = PBXGroup;
+			children = (
+				9C777635259DC85200821D8E /* TaskListViewModel.swift */,
+				9CD69838259C35E300651338 /* TaskListView.swift */,
+			);
+			path = TaskList;
+			sourceTree = "<group>";
+		};
+		9C777638259DC96200821D8E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9C777639259DC97000821D8E /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9C77763E259DD10200821D8E /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				9C777642259DD12600821D8E /* AddTaskViewModel.swift */,
+				9C77763F259DD11400821D8E /* AddTaskView.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		9C777646259DF7EE00821D8E /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				9C777647259DF80200821D8E /* EditTaskView.swift */,
+				9C77764B259DF81900821D8E /* EditTaskViewModel.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
 		9CD6982A259C35E300651338 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +135,10 @@
 		9CD69835259C35E300651338 /* ToyGRDB */ = {
 			isa = PBXGroup;
 			children = (
+				9C777632259DC81600821D8E /* Views */,
+				9C77762E259DC5E300821D8E /* Models */,
+				9C777626259DBE9100821D8E /* Persistencies */,
 				9CD69836259C35E300651338 /* ToyGRDBApp.swift */,
-				9CD69838259C35E300651338 /* ContentView.swift */,
 				9CD6983A259C35E500651338 /* Assets.xcassets */,
 				9CD6983F259C35E500651338 /* Info.plist */,
 				9CD6983C259C35E500651338 /* Preview Content */,
@@ -85,6 +170,9 @@
 			dependencies = (
 			);
 			name = ToyGRDB;
+			packageProductDependencies = (
+				9C777623259DBE7E00821D8E /* GRDB */,
+			);
 			productName = ToyGRDB;
 			productReference = 9CD69833259C35E300651338 /* ToyGRDB.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 9CD6982A259C35E300651338;
+			packageReferences = (
+				9C777622259DBE7E00821D8E /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
 			productRefGroup = 9CD69834259C35E300651338 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CD69839259C35E300651338 /* ContentView.swift in Sources */,
+				9C777629259DBEA200821D8E /* AppDatabase.swift in Sources */,
+				9C777643259DD12600821D8E /* AddTaskViewModel.swift in Sources */,
+				9C77762C259DBEC000821D8E /* Persistence.swift in Sources */,
+				9C777630259DC5F000821D8E /* Task.swift in Sources */,
+				9C777640259DD11400821D8E /* AddTaskView.swift in Sources */,
+				9CD69839259C35E300651338 /* TaskListView.swift in Sources */,
 				9CD69837259C35E300651338 /* ToyGRDBApp.swift in Sources */,
+				9C777636259DC85200821D8E /* TaskListViewModel.swift in Sources */,
+				9C77763A259DC97000821D8E /* TaskRepository.swift in Sources */,
+				9C777648259DF80200821D8E /* EditTaskView.swift in Sources */,
+				9C77764C259DF81900821D8E /* EditTaskViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C777622259DBE7E00821D8E /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C777623259DBE7E00821D8E /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C777622259DBE7E00821D8E /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CD6982B259C35E300651338 /* Project object */;
 }

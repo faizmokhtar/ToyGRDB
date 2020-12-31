@@ -11,7 +11,7 @@ import SwiftUI
 struct ToyGRDBApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListView(viewModel: TaskListViewModel())
         }
     }
 }
